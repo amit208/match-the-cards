@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient(160deg, #fdfbfb 0%, #ebedee 100%); */
+    background-color: #7bf7bf;
+    font-family: 'K2D', sans-serif;
+}
+
+header {
+    width: 100vw;
+    font-size: 1em;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    letter-spacing: 2px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    border-bottom: 1.5px solid rgba(250, 250, 250, 0.5);
+}
+
+.headerContainer h1 {
+    color: #85F7B5;
+}
+
+.asideAndMainContainer {
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+}
+
+hr {
+    margin: 10px 0;
+    border-top: 1px solid rgba(220, 220, 220, 0.6);
+	border-bottom: 2px solid rgba(101, 117, 146, 0.4);
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+aside {
+    width: 250px;
+    margin: auto;
+    height: 320px;
+    justify-content: space-around;
+    border-top: 1px solid rgba(250, 250, 250, 0.8);
+    border-left: 1px solid rgba(250, 250, 250, 0.4);
+    background: linear-gradient(160deg, #2af598 0%, #009efd 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+.asideContainer {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.stars {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.star {
+    padding: 0 8px;
+    color: gold;
+    font-size: 1.2em;
+}
+
+.timmer {
+    margin: auto;
+    text-align: center;
+}
+
+.timmer td {
+    padding: 0 4px;
+    letter-spacing: 4px;
+    font-size: 22px;
+}
+
+main {
+    /* width: 100vw; */
+    margin: 24px auto;
+}
+
+.cardContainer {
+    border-top: 1px solid rgba(250, 250, 250, 0.8);
+    border-left: 1px solid rgba(250, 250, 250, 0.4);
+    width: 520px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background: linear-gradient(-160deg, #2af598 0%, #009efd 100%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    padding: 16px;
+}
+
+.card {
+    border-top: 1px solid rgba(250, 250, 250, 0.8);
+    width: 105px;
+    height: 105px;
+    cursor: pointer;
+    background-color: #85F7B5;
+    text-align: center;
+    margin: 8px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    font-size: 2.4em;
+    /* ====================================== */
+    color: rgba(66, 66, 66, 0);
+    padding-top: 30px;
+}
+
+#winningModal {
+    display: none;
+    justify-content: center;
+    width: 600px;
+    height: 350px;
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    left: 25%;
+    color: rgb(66, 66, 66);
+    background-color: rgba(111, 238, 181, 0.9);
+    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    border-top: 1px solid rgba(250, 250, 250, 0.6);
+    border-left: 1px solid rgba(250, 250, 250, 0.6);
+}
+
+.modal {
+    margin: auto;
+    font-size: 2.4em;
+}
+
+.finalTime {
+    display: flex;
+    justify-content: baseline;
+    padding-left: 90px;
+    /* display: inline-block; */
+}
+
+.finalTime table {
+    display: inline-block;
+    font-size: inherit;
+    color: inherit;
+}
+
+.modal p:first-child {
+    color: green;
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+
+.restart {
+    cursor: pointer;
+    background-color: rgba(220, 220, 220, 0.8);
+}
