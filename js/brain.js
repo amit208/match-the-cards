@@ -1,6 +1,11 @@
 // **************************************************************************
+// ---------> SOME CLARIFICATION <-------------------------
+
 // I have used a library of css animation called "animate.css" the link to that library is -- https://daneden.github.io/animate.css/
 // So, there will be some random classes like "animated", "bounceInDown".........
+
+// I have used setInterval to delay the code at sooooo many points in this code. The reason to this is that I want to give full time to the animations so that they can run completely.
+// If I would have not added those setInterval functions then the animations would not run completely
 // *****************************************************************************
 
 
