@@ -1,0 +1,111 @@
+<!DOCTYPE hmtl>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Card Gussing Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=K2D|Roboto+Condensed:300" rel="stylesheet">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <header>
+            <div class="headerContainer">
+                <h1>Match the cards</h1>
+            </div>
+        </header>
+
+        <div class="asideAndMainContainer">
+            <aside class="animated fadeInLeft">
+                <div class=" asideContainer">
+                    <div class="rating">
+                        <ul class="stars">
+                            <li class="fa fa-star star star1"></li>
+                            <li class="fa fa-star star star2"></li>
+                            <li class="fa fa-star star star3"></li>
+                            <li class="fa fa-star star star4"></li>
+                            <li class="fa fa-star star star5"></li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="timmerDiv">
+                        <p>Timmer</p>
+                        <table class="timmer">
+                            <tr>
+                                <td id="hours">0</td>
+                                <td id="colon">:</td>
+                                <td id="min">0</td>
+                                <td id="colon">:</td>
+                                <td id="sec">0</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <hr>
+
+                    <div id="moves">
+                        <p>Moves</p>
+                        <p class="moveCount">0</p>
+                    </div>
+
+                    <hr>
+
+                    <div class="reset">
+                        <p onclick="reset()">Reset</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main>
+                <div class="animated fadeInRight cardContainer">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </main>
+        </div>
+
+        <section id="winningModal">
+            <div class="modal">
+                <p class="">Yay!!! You did it</p>
+                <p class="performance">
+                </p>
+                <p>Moves - <span class="totalMoves"></span></p>
+                <p class="finalTime">Time -
+                    <table class="totalTime">
+                        <tr>
+                            <td id="totalHours">0</td>
+                            <td id="colon">:</td>
+                            <td id="totalMin">0</td>
+                            <td id="colon">:</td>
+                            <td id="totalSec">0</td>
+                        </tr>
+                    </table>
+                </p>
+                <p class="restart" onclick="reset()">Play Again</p>
+            </div>
+        </section>
+
+        
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/testing_again.js"></script>
+    </body>
+</html>
