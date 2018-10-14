@@ -190,12 +190,10 @@ function winningFunction() {
         document.querySelector(".totalMoves").innerText = totalMoves;
 
         // This code will get the current timming and will save it to use in later
-        let hour = document.querySelector("#hours").innerText;
         let min = document.querySelector("#min").innerText;
         let sec = document.querySelector("#sec").innerText;
 
-        // This code will insert the value of the hour, min and sec in the element below
-        document.querySelector("#totalHours").innerText = hour;
+        // This code will insert the value of the min and sec in the element below
         document.querySelector("#totalMin").innerText = min;
         document.querySelector("#totalSec").innerText = sec;
 
@@ -305,17 +303,24 @@ function ifClicked() {
     clickCount += 1;
     let s = 1;
     let m = 0;
-    let h = 0;
+    // let h = 0;
 
     setInterval(function () {
         if (running === 1) {
-            let hour = document.getElementById("hours");
             let min = document.getElementById("min");
             let sec = document.getElementById("sec");
 
-            hour.innerText = h;
-            min.innerText = m;
-            sec.innerText = s;
+            if (s < 10) {
+                sec.innerText = "0" + s;
+            } else {
+                sec.innerText = s;
+            }
+
+            if (m < 10) {
+                min.innerText = "0" + m;
+            } else {
+                min.innerText = m;
+            }
 
             if (s === 59) {
                 s = -1;
@@ -331,15 +336,13 @@ function ifClicked() {
         } else {
             s = 0;
             m = 0;
-            h = 0;
+            // h = 0;
 
-            let hour = document.getElementById("hours");
             let min = document.getElementById("min");
             let sec = document.getElementById("sec");
 
-            hour.innerText = h;
-            min.innerText = m;
-            sec.innerText = s;
+            min.innerText = "0" + m;
+            sec.innerText = "0" + s;
         }
     }, 1000);
 }
