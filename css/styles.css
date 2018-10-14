@@ -229,6 +229,9 @@ For Screen Size below 800px
 	    border-right: 2px solid rgba(101, 117, 146, 0.4);
     }
 
+    .reset {
+        margin: auto 0;
+    }
 }
 
 /* ===============================
